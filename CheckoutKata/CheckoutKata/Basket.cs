@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace CheckoutKata
@@ -6,6 +7,9 @@ namespace CheckoutKata
     public class Basket
     {
         List<Item> _items = null;
+
+        public event EventHandler ItemAdded;
+        public event EventHandler ItemRemoved;
 
         public Basket()
         {
@@ -20,7 +24,9 @@ namespace CheckoutKata
                 if (itemToAdd != null)
                     itemToAdd.Quantity += item.Quantity;
                 else
-                    _items.Add(item);                
+                    _items.Add(item);
+
+                OnItemAdded(EventArgs.Empty);
             }
         }
 
@@ -29,5 +35,14 @@ namespace CheckoutKata
             return _items;
         }
 
+        protected virtual void OnItemAdded(EventArgs e)
+        {
+            ItemAdded?.Invoke(this, e);
+        }
+
+        protected virtual void OnItemRemoved(EventArgs e)
+        {
+            ItemRemoved?.Invoke(this, e);
+        }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace CheckoutKata.PromotionRules.MultiBuyPromotionRules
 {
-    public class MultiBuyCashPromotionRule
+    public class MultiBuyCashPromotionRule : IMultiBuyPromotionRule
     {
         public string SKU { get; set; }
         public int PromotionItemQuantity { get; set; }

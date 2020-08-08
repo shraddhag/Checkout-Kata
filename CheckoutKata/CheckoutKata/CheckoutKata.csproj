@@ -47,6 +47,8 @@
     <Compile Include="IBasket.cs" />
     <Compile Include="IMultiBuyPromotionRule.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="Observers\BasketPromotionObserver.cs" />
+    <Compile Include="Observers\BasketTotalObserver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="PromotionRules\MultiBuyPromotionRules\MultiBuyCashPromotionRule.cs" />
     <Compile Include="PromotionRules\MultiBuyPromotionRules\MultiBuyPercentagePromotionRule.cs" />
