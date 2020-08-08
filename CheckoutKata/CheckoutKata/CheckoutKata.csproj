@@ -45,8 +45,10 @@
   <ItemGroup>
     <Compile Include="Basket.cs" />
     <Compile Include="IBasket.cs" />
+    <Compile Include="IMultiBuyPromotionRule.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="PromotionRules\MultiBuyPromotionRules\MultiBuyPercentagePromotionRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
