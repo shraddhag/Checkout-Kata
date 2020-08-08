@@ -52,6 +52,7 @@
     <Compile Include="BasketTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MultiBuyPercentagePromotionRuleTests.cs" />
+    <Compile Include="MultiBuyCashPromotionRuleTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

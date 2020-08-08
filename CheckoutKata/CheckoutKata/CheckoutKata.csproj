@@ -48,6 +48,7 @@
     <Compile Include="IMultiBuyPromotionRule.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="PromotionRules\MultiBuyPromotionRules\MultiBuyCashPromotionRule.cs" />
     <Compile Include="PromotionRules\MultiBuyPromotionRules\MultiBuyPercentagePromotionRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
